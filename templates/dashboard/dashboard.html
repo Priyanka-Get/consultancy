@@ -1,0 +1,373 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>consultancy dashboard</title>
+	    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'dashboard/css/bootstrap.min.css' %}">
+	    <!----css3---->
+        <link rel="stylesheet" href="{% static 'dashboard/css/custom.css' %}">
+		
+		
+		<!--google fonts -->
+	
+	    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+        <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+        <link href="{% static 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap' %}" rel="stylesheet">
+	
+	
+	<!--google material icon-->
+      <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="{% static '/dashboard/css/styles.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static '/dashboard/css/styleesh.css' %}">
+
+
+
+  </head>
+
+  <style>
+    #btn{
+      transform: translateX(800px);
+      margin-top: -60px;
+    }
+    #h2{
+        transform:translateY(10px); 
+        margin-left: 10px;
+    }
+   
+  </style>
+  <body>
+  
+
+<div class="wrapper">
+
+
+        <div class="body-overlay"></div>
+		
+		<!-------------------------sidebar------------>
+		     <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="{% static 'dashboard/img/logo.png' %}" class="img-fluid"/><span>Consultancy</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+			<li  class="active">
+                    <a href="#" class="dashboard"><i class="material-icons">dashboard</i>
+					<span>Dashboard</span></a>
+                </li>
+		
+
+               
+                
+                <li class="dropdown">
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons">restaurant</i><span>Services</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+                        <li>
+                            <a href="">view</a>
+                        </li>
+                        <li>
+                            <a href="">edit</a>
+                            
+                        </li>
+                        <li>
+                            <a href="">delete</a>
+                            
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+
+
+
+                
+				
+				 <li class="dropdown">
+                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons" id="material-icons">fastfood</i>
+				
+					
+					<span>Contact Us</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu3">
+                        <li>
+                            <a href="#">edit</a>
+                        </li>
+                        <li>
+                            <a href="#">View</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+				  <li class="dropdown">
+                    <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons" id="material-icons">fastfood</i><span>Home</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu4">
+                        <li>
+                            <a href="#">Create</a>
+                        </li>
+                        <li>
+                            <a href="#">View</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons" id="material-icons">check_circle</i><span>History</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu4">
+                        <li>
+                            <a href="#">view</a>
+                        </li>
+                       
+                        
+                    </ul>
+                </li>
+				
+				<li class="dropdown">
+                    <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons" id="material-icons">groups</i><span>Customers</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu5">
+                        <li>
+                            <a href="#">add_customers</a>
+                        </li>
+                        <li>
+                            <a href="#">edit_customers</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+               
+			   
+			   
+			   <li class="dropdown">
+                    <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons" id="material-icons">shopping_cart</i><span>Search</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+                       
+                        <li>
+                            <a href="#">View</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="material-icons" id="material-icons">person_add</i><span>PDF</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+                        <li>
+                            <a href="#">view</a>
+                        </li>
+                        <li>
+                            <a href="#">delete</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+             
+           
+        </nav>
+		
+		
+		
+		
+		<!--------page-content---------------->
+		
+		<div id="content">
+		   
+		   <!--top--navbar----design--------->
+		   
+		   <div class="top-navbar">
+		      <div class="xp-topbar">
+
+                <!-- Start XP Row -->
+                <div class="row"> 
+                    <!-- Start XP Col -->
+                    <div class="col-2 col-md-1 col-lg-1 order-2 order-md-1 align-self-center">
+                        <div class="xp-menubar">
+                               <span class="material-icons text-white">signal_cellular_alt
+							   </span>
+                         </div>
+                    </div> 
+                    <!-- End XP Col -->
+
+                    <!-- Start XP Col -->
+                    <div class="col-md-5 col-lg-3 order-3 order-md-2">
+                        <div class="xp-searchbar">
+                            <form>
+                                <div class="input-group">
+                                  <input type="search" class="form-control" 
+								  placeholder="Search">
+                                  <div class="input-group-append">
+                                    <button class="btn" type="submit" 
+									id="button-addon2">GO</button>
+                                  </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End XP Col -->
+
+                    <!-- Start XP Col -->
+                    <div class="col-10 col-md-6 col-lg-8 order-1 order-md-3">
+                        <div class="xp-profilebar text-right">
+							 <nav class="navbar p-0">
+                        <ul class="nav navbar-nav flex-row ml-auto">   
+                            <li class="dropdown nav-item active">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                   <span class="material-icons">notifications</span>
+								   <span class="notification">4</span>
+                               </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">You have 5 new messages</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">You're now friend with Mike</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wish Mary on her birthday!</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">5 warnings in Server Console</a>
+                                    </li>
+                                  
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+								<span class="material-icons">question_answer</span>
+
+								</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" data-toggle="dropdown">
+								<img src="{% static 'dashboard/img/user.jpg' %}" style="width:40px; border-radius:50%;"/>
+								<span class="xp-user-live"></span>
+								</a>
+								<ul class="dropdown-menu small-menu">
+                                    <li>
+                                        <a href="#">
+										  <span class="material-icons">
+person_outline
+</span>Profile
+
+										</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="material-icons">
+settings
+</span>Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="material-icons">
+logout</span>Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+               
+            </nav>
+							
+                        </div>
+                    </div>
+                    <!-- End XP Col -->
+
+                </div> 
+                <!-- End XP Row -->
+
+            </div>
+		    
+			
+		   </div>
+		   
+
+        
+		   
+		   <!--------main-content------------->
+		   
+       {% block content %}
+       {% endblock %}		
+ <!--Edit Modal HTML ADD -->
+
+ <!--Edit Modal HTML -->
+
+
+
+
+<!-- Delete Modal HTML -->
+ 
+			 
+			 <!---footer---->
+			 
+			 
+		<!-- </div>
+		
+		<footer class="footer">
+			    <div class="container-fluid">
+				  <div class="footer-in">
+                    <p class="mb-0">&copy 2020 Vishweb design - All Rights Reserved.</p>
+                </div>
+				</div>
+			 </footer>
+</div>
+</div> -->
+
+
+<!----------html code compleate----------->
+
+
+
+
+
+
+
+
+  
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="{% static 'dashboard/js/jquery-3.3.1.slim.min.js ' %}"></script>
+   <script src="{% static 'dashboard/js/popper.min.js' %}"></script>
+   <script src="{% static 'dashboard/js/bootstrap.min.js' %}"></script>
+   <script src="{% static 'dashboard/js/jquery-3.3.1.min.js' %}"></script>
+  
+  
+  <script type="text/javascript">
+        
+		$(document).ready(function(){
+		  $(".xp-menubar").on('click',function(){
+		    $('#sidebar').toggleClass('active');
+			$('#content').toggleClass('active');
+		  });
+		  
+		   $(".xp-menubar,.body-overlay").on('click',function(){
+		     $('#sidebar,.body-overlay').toggleClass('show-nav');
+		   });
+		  
+		});
+		
+</script>
+  
+  
+
+
+
+  </body>
+  
+  </html>
+
+

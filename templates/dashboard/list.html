@@ -1,0 +1,85 @@
+{% extends 'dashboard/dashboard.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    body {
+    background-color: #f8f9fa;
+}
+
+.brand-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+#example th{
+    padding: 10px;
+}
+
+
+thead#listhead {
+    transform: translateX(10px);
+}
+
+
+
+</style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+
+
+<body>
+    <div class="container w-80 pt-8" style="margin-top: 70px;">
+        <div class="card">
+            <div class="card-body">
+                <div class="brand-list-header">
+                    <h2>Contact List</h2>
+                    <a href=""><button class="btn btn-warning">Add</button></a>
+                </div>
+                <div class="table-container">
+                    <table id="example" class="table table-striped" style="width:100%;">
+                        <thead id="listhead">
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                            <tr>
+                                <td id="name">Priyanka</td>
+                                <td>priyankac9986@gmail.com</td>
+                                <td>contact details</td>
+                                <td>I'm priyanka from curve.org</td>
+                                <td style="display: flex;gap: 10px;">
+                                    <a href="">
+                                        <button class="btn btn-secondary">Edit</button>
+                                    </a>
+                                    <a href="" class="delete-link"
+                                        data-id="">
+                                        <button class="btn btn-danger">Delete</button>
+                                    </a>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+
